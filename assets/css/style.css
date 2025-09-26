@@ -106,7 +106,7 @@ header .title {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate( -50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -358,11 +358,76 @@ header .title h1 span {
     margin: 20px 0;
 }
 
+/* customers Section */
+
+.customersContainer {
+    width: 1290px;
+    margin: 0 auto;
+}
+
+.customersContainer>p {
+    font-size: 18px;
+}
+
+.customersContainer>h2 {
+    font-size: 33px;
+    margin: 22px 0;
+}
+
+.customersContainer .customers {
+    margin: 30px 0;
+}
+
+.customersContainer .customers .customerCard {
+    width: 407px;
+    height: 345px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid var(--color-Grey);
+}
+
+.customersContainer .customers .customerCard .quote {
+    color: var(--color-Yellow);
+    font-size: 29px;
+}
+
+.customersContainer .customers .customerCard .comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.customersContainer .customers .customerCard .comment p {
+    margin-bottom: 40px;
+}
+
+.customersContainer .customers .customerCard .comment .identity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.customersContainer .customers .customerCard .comment .identityPhoto {
+    width: 60px
+}
+
+.customersContainer .customers .customerCard .comment .identity .identityName {
+    padding-left: 20px;
+}
+
+.customersContainer .customers .customerCard .comment .identity .identityName .name {
+    font-weight: 700;
+}
+
+.customersContainer .customers .customerCard .comment .identity .identityName .function {
+    display: block;
+}
+
 /* Supporters section */
 
 .supporters {
     width: 1290px;
-    margin: 0 auto;
+    margin: 80px auto;
     display: flex;
     justify-content: space-between;
 }
@@ -395,12 +460,41 @@ header .title h1 span {
 }
 
 .callUsNowContent {
-    width: 1290px;
-    margin: 0 auto;
-    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white
+}
+
+.callUsNowContent p {
+    margin-bottom: 30px;
+}
+
+.callUsNowContent h1 {
+    font-size: 33px;
+    line-height: 50px;
+
+}
+
+.callUsNowContent h1 span {
+    display: block;
+}
+
+.callUsNowContent button {
+    width: 177px;
+    height: 56px;
+}
+
+.callUsNowContent button:hover {
+    cursor: pointer;
 }
 
 /* Footer section */
+
+footer {
+    padding: 100px 0;
+}
 
 .container {
     width: 1290px;
@@ -413,4 +507,18 @@ header .title h1 span {
 
 .footerContainer .column {
     width: 25%;
+    padding: 20px
+}
+
+.footerContainer .column .logo {
+    margin-bottom: 50px;
+}
+
+.footerContainer .column h2 {
+    margin-bottom: 20px;
+}
+
+.copyright {
+    margin-top: 80px;
+    text-align: center;
 }
