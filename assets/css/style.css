@@ -339,6 +339,7 @@ header .title h1 span {
 }
 
 .howItWorksContainer .howItWorks {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 56px 0;
@@ -348,6 +349,9 @@ header .title h1 span {
     padding: 40px;
     text-align: center;
     width: 33%;
+    border: 2px solid var(--color-Grey);
+    width: 409px;
+    height: 313px;
 }
 
 .howItWorksContainer .howItWorks>div h3 {
