@@ -85,7 +85,7 @@ header {
 .menuBar .menu nav ul li a {
     padding: 28px;
     text-decoration: none;
-    color: --var(--color-Black);
+    color: var(--color-Black);
     font-size: 15px;
 }
 
