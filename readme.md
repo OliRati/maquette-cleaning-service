@@ -59,14 +59,6 @@ In at iaculis lorem praesent tempor dictum tellus ut molestie.
 From $60
 View all services
 Contact us now
-We are industry leaders
-
-Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut, dignissim elementum mauris. Sed dapibus auctor scelerisque pellentesque habitant morbi tristique senectus et netus et malesuada fames.
-
-Worry-free services
-Trusted & experienced
-Quality work
-Service guarantee
 
 We provide eco-friendly cleaning services
 

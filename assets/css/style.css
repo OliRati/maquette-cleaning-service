@@ -134,6 +134,7 @@ header .title h1 span {
     top: 795px;
     background-color: white;
     padding: 72px 78px;
+    z-index: 1;
 }
 
 .contact h2 {
@@ -141,12 +142,6 @@ header .title h1 span {
     text-align: center;
     margin-bottom: 33px;
     font-size: 18px;
-}
-
-.services {
-    width: 100%;
-    height: 594px;
-    background-color: var(--color-Black);
 }
 
 .contact form {
@@ -164,8 +159,186 @@ header .title h1 span {
     background-color: var(--color-Grey);
 }
 
+.contact input[type="text"]:hover,
+.contact input[type="tel"]:hover,
+.contact input[type="submit"]:hover,
+.contact select:hover {
+    cursor: pointer;
+}
+
 .contact input[type="submit"] {
     background-color: var(--color-Black);
     color: white;
     padding: 14px 40px;
+}
+
+/* Services section */
+
+.services {
+    width: 100%;
+    height: 594px;
+    background-color: var(--color-Black);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 36px;
+}
+
+.services p {
+    font-size: 18px;
+}
+
+.services .cardContainer {
+    position: absolute;
+    top: 491px;
+    width: 1290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.services .cardContainer .cards {
+    width: 412px;
+    height: 420px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    border: 2px solid var(--color-Grey);
+}
+
+.services .cardContainer .cards h3 {
+    margin: 30px 0;
+    font-size: 18px;
+}
+
+.services .cardContainer .cards p {
+    font-size: 15px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.services .cardContainer .cards .price {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 56px;
+}
+
+/* Call to action buttons */
+
+.call2action {
+    width: 1290px;
+    margin: 0px auto;
+    margin-top: 368px;
+    margin-bottom: 130px;
+    text-align: center;
+}
+
+.call2action button {
+    width: 214px;
+    height: 56px;
+    border: 2px solid black;
+    background-color: white;
+    margin: 0 10px
+}
+
+.call2action button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Section Services description */
+
+.rowContainer {
+    width: 1290px;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+}
+
+.rowContainer .description,
+.rowContainer .image {
+    width: 49%;
+}
+
+/* HowTo section */
+
+.howtoContainer {
+    width: 1290px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.howtoContainer .howtos {
+    display: flex;
+}
+
+/* Supporters section */
+
+.supporters {
+    width: 1290px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.supporters img {
+    width: 180px;
+}
+
+/* Customers reviews */
+
+.customersContainer {
+    width: 1290px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customersContainer .customers {
+    display: flex;
+}
+
+/* Call Us Now section */
+
+.callUsNowContainer {
+    width: 100%;
+    height: 446px;
+    background-image: url(../img/home-contact-section-background.webp);
+    position: relative;
+}
+
+.callUsNowContent {
+    width: 1290px;
+    margin: 0 auto;
+    color: white;
+}
+
+/* Footer section */
+
+.container {
+    width: 1290px;
+    margin: 0 auto;
+}
+
+.footerContainer {
+    display: flex;
+}
+
+.footerContainer .column {
+    width: 25%;
 }
