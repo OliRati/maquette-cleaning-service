@@ -473,6 +473,12 @@ header .title h1 span {
     justify-content: space-between;
 }
 
+.callUsNowContent .rightside {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
 .callUsNowContent p {
     margin-bottom: 30px;
 }
