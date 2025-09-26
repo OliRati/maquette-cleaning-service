@@ -531,11 +531,30 @@ footer {
     margin-bottom: 20px;
 }
 
+.footerContainer .column p {
+    margin-bottom: 20px;
+}
+
 .footerContainer .column i {
     background-color: var(--color-Grey);
     border-radius: 50%;
     margin: 0 10px;
 }
+
+.socialNetworks {
+    display: flex;
+    gap: 10px;
+}
+
+.socialNetworks .bcglogo {
+    width: 35px;
+    height: 35px;
+    background-color: var(--color-Grey);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
 .copyright {
     margin-top: 80px;
     text-align: center;
