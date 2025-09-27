@@ -561,6 +561,16 @@ footer {
     margin: 10px 0;
 }
 
+.footerContainer .column a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-Black);
+}
+
+.footerContainer .column a:hover {
+    font-weight: 700;
+}
+
 .socialNetworks {
     display: flex;
     gap: 10px;
