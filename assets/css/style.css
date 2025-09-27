@@ -47,14 +47,22 @@ img {
 header {
     width: 100%;
     height: 895px;
-    background-image: url(../img/home-hero-background.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.headerImage {
+    filter: brightness(0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.headerImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .menuBar {
@@ -362,11 +370,14 @@ header .title h1 span {
     margin: 20px 0;
 }
 
-/* customers Section */
+/* Customers reviews */
 
 .customersContainer {
     width: 1290px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .customersContainer>p {
@@ -379,14 +390,16 @@ header .title h1 span {
 }
 
 .customersContainer .customers {
+    width: 100%;
+    display: flex;
     margin: 30px 0;
+    justify-content: space-between;
 }
 
 .customersContainer .customers .customerCard {
     width: 407px;
     height: 345px;
     display: flex;
-    justify-content: space-between;
     border: 2px solid var(--color-Grey);
 }
 
@@ -399,6 +412,7 @@ header .title h1 span {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-right: 45px;
 }
 
 .customersContainer .customers .customerCard .comment p {
@@ -440,30 +454,24 @@ header .title h1 span {
     width: 180px;
 }
 
-/* Customers reviews */
-
-.customersContainer {
-    width: 1290px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.customersContainer .customers {
-    display: flex;
-}
-
 /* Call Us Now section */
 
 .callUsNowContainer {
     width: 100%;
     height: 446px;
-    background-image: url(../img/home-contact-section-background.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     position: relative;
+}
+
+.callUsNowImage {
+    filter: brightness(0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.callUsNowImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .callUsNowContent {
