@@ -563,12 +563,13 @@ footer {
 
 .footerContainer .column a {
     text-decoration: none;
-    cursor: pointer;
     color: var(--color-Black);
 }
 
+.footerContainer .column li:hover,
 .footerContainer .column a:hover {
     font-weight: 700;
+    cursor: pointer;
 }
 
 .socialNetworks {
@@ -583,6 +584,12 @@ footer {
     border-radius: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.socialNetworks .bcglogo:hover {
+    border: 2px solid darkgray;
+    cursor: pointer;
 }
 
 .copyright {
