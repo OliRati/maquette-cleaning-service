@@ -181,6 +181,11 @@ header .title h1 span {
     cursor: pointer;
 }
 
+.contact input[type="submit"]:hover {
+    color: black;
+    background-color: white;
+}
+
 .contact input[type="submit"] {
     background-color: var(--color-Black);
     color: white;
