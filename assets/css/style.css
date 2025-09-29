@@ -69,7 +69,9 @@ header {
 .menuBar {
     width: 1290px;
     height: 76px;
-    position: absolute;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 0px 0px 5px gray;
     top: 25px;
     background-color: white;
     padding: 0 35px;
