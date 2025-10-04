@@ -171,9 +171,9 @@ header .title h1 span {
     justify-content: space-between;
 }
 
-.contact input[type="text"],
-.contact input[type="tel"],
-.contact select {
+.contact form input[type="text"],
+.contact form input[type="tel"],
+.contact form select {
     width: 278px;
     height: 55px;
     padding: 0 16px;
@@ -371,7 +371,6 @@ header .title h1 span {
 .howItWorksContainer .howItWorks>div {
     padding: 40px;
     text-align: center;
-    width: 33%;
     border: 2px solid var(--color-Grey);
     width: 409px;
     height: 313px;
@@ -646,7 +645,15 @@ footer {
 
     .contact form {
         flex-direction: column;
+        gap: 1rem;
     }
+
+    .contact form input[type="text"],
+    .contact form input[type="tel"],
+    .contact form select {
+        width: 100%;
+    }
+
 
     .services {
         padding-top: 19rem;
@@ -676,6 +683,7 @@ footer {
 
     .services .cardContainer .cards {
         padding: 2rem;
+        width: 80%;
         height: unset;
     }
 
@@ -688,6 +696,11 @@ footer {
         margin-top: 3rem;
     }
 
+    .call2action button {
+        width: unset;
+        padding: 1rem 2rem;
+    }
+    
     .rowContainer {
         flex-direction: column;
     }
@@ -697,10 +710,32 @@ footer {
         width: 100%;
     }
 
+    .howItWorksContainer>p {
+        font-size: 1rem;
+    }
+
+    .howItWorksContainer>h3 {
+        font-size: 1.5rem;
+    }
+
     .howItWorksContainer .howItWorks {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+    }
+
+    .howItWorksContainer .howItWorks>div {
+        padding: 2rem;
+        width: 80%;
+        height: unset;
+    }
+
+    .customersContainer>p {
+        font-size: 1.3rem;
+    }
+
+    .customersContainer>h2 {
+        font-size: 2rem;
     }
 
     .customersContainer .customers {
@@ -709,7 +744,12 @@ footer {
         gap: 2rem;
     }
 
+    .customersContainer .customers .customerCard {
+        width: 80%;
+    }
+
     .supporters {
+        width: 90%;
         flex-wrap: wrap;
         gap: 3rem;
     }
