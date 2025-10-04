@@ -617,6 +617,12 @@ footer {
     text-align: center;
 }
 
+@media screen and (max-width: 1320px) {
+    :root {
+        --content-width: 94%;
+    }
+}
+
 @media screen and (max-width: 576px) {
 
     :root {
