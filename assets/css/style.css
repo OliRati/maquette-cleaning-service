@@ -640,6 +640,34 @@ footer {
         object-fit: cover;
         align-items: center;
     }
+
+    .contact form input[type="text"],
+    .contact form input[type="tel"],
+    .contact form select {
+        width: 24%;
+    }
+
+    .contact input[type="submit"] {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .services>h2 {
+        text-align: center;
+        width: 94%;
+    }
+
+    .services>p {
+        text-align: center;
+        width: 94%;
+    }
+
+    .services .cardContainer .cards {
+        padding: 2rem;
+        width: 32%;
+        height: unset;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -690,7 +718,8 @@ footer {
 
     .contact form input[type="text"],
     .contact form input[type="tel"],
-    .contact form select {
+    .contact form select,
+    .contact input[type="submit"] {
         width: 100%;
     }
 
@@ -755,6 +784,7 @@ footer {
     .rowContainer .description button {
         margin-bottom: 3rem;
     }
+
     .howItWorksContainer>p {
         font-size: 1rem;
     }
