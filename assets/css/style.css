@@ -56,7 +56,7 @@ header {
 }
 
 .headerImage {
-    filter: brightness(0.6);
+    filter: brightness(0.6)-;
     width: 100%;
     height: 100%;
 }
@@ -111,13 +111,19 @@ header {
     background-color: var(--color-Yellow);
 }
 
-.menuBar .callUs {
+.menuBar .rightMenu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menuBar .rightMenu .callUs {
     font-size: 15px;
 }
 
-.menuBar .callUs span {
+.menuBar .rightMenu .callUs span {
     font-weight: 700;
-    margin-right: 15px;
 }
 
 header .title {
@@ -624,6 +630,11 @@ footer {
     header .title h1 {
         font-size: 2rem;
         line-height: 3rem;
+        white-space: unset;
+    }
+
+    .menuBar {
+        padding: 0 1rem;
     }
 
     .menuBar .menu {
@@ -632,6 +643,10 @@ footer {
 
     .menuBar label {
         display: block;
+    }
+
+    .menuBar .callUs {
+        display: none;
     }
 
     .contact {
@@ -700,9 +715,10 @@ footer {
         width: unset;
         padding: 1rem 2rem;
     }
-    
+
     .rowContainer {
         flex-direction: column;
+        margin-bottom: 2rem;
     }
 
     .rowContainer .description,
@@ -710,6 +726,9 @@ footer {
         width: 100%;
     }
 
+    .rowContainer .description button {
+        margin-bottom: 3rem;
+    }
     .howItWorksContainer>p {
         font-size: 1rem;
     }
