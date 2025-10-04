@@ -26,6 +26,8 @@ img {
     --color-Yellow: #ffcd05;
     --color-Black: #0a0500;
     --color-Grey: #f7f7f7;
+
+    --content-width: 1290px;
 }
 
 @font-face {
@@ -67,7 +69,7 @@ header {
 }
 
 .menuBar {
-    width: 1290px;
+    width: var(--content-width);
     height: 76px;
     position: fixed;
     z-index: 2;
@@ -78,6 +80,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#hamburgermenu,
+.menuBar label {
+    display: none;
 }
 
 .logo {
@@ -144,7 +151,7 @@ header .title h1 span {
 
 .contact {
     position: absolute;
-    width: 1290px;
+    width: var(--content-width);
     height: 250px;
     top: 795px;
     background-color: white;
@@ -206,19 +213,19 @@ header .title h1 span {
     position: relative;
 }
 
-.services h2 {
+.services>h2 {
     font-size: 32px;
     margin-bottom: 36px;
 }
 
-.services p {
+.services>p {
     font-size: 18px;
 }
 
 .services .cardContainer {
     position: absolute;
     top: 491px;
-    width: 1290px;
+    width: var(--content-width);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -257,7 +264,7 @@ header .title h1 span {
 /* Call to action buttons */
 
 .call2action {
-    width: 1290px;
+    width: var(--content-width);
     margin: 0px auto;
     margin-top: 368px;
     margin-bottom: 130px;
@@ -281,7 +288,7 @@ header .title h1 span {
 /* Section Services description */
 
 .rowContainer {
-    width: 1290px;
+    width: var(--content-width);
     margin: 0px auto;
     margin-bottom: 100px;
     text-align: center;
@@ -338,7 +345,7 @@ header .title h1 span {
 /* HowItWork section */
 
 .howItWorksContainer {
-    width: 1290px;
+    width: var(--content-width);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -381,7 +388,7 @@ header .title h1 span {
 /* Customers reviews */
 
 .customersContainer {
-    width: 1290px;
+    width: var(--content-width);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -452,7 +459,7 @@ header .title h1 span {
 /* Supporters section */
 
 .supporters {
-    width: 1290px;
+    width: var(--content-width);
     margin: 80px auto;
     display: flex;
     justify-content: space-between;
@@ -488,7 +495,7 @@ header .title h1 span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1290px;
+    width: var(--content-width);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -529,11 +536,11 @@ header .title h1 span {
 footer {
     background-color: var(--color-Grey);
     padding-top: 100px;
-    padding-bottom:25px;
+    padding-bottom: 25px;
 }
 
 .container {
-    width: 1290px;
+    width: var(--content-width);
     margin: 0 auto;
 }
 
@@ -603,4 +610,138 @@ footer {
 .copyright {
     margin-top: 80px;
     text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+
+    :root {
+        --content-width: 95%;
+    }
+
+    header .title p {
+        font-size: 1rem;
+    }
+
+    header .title h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .menuBar .menu {
+        display: none;
+    }
+
+    .menuBar label {
+        display: block;
+    }
+
+    .contact {
+        height: unset;
+        padding: 2rem 2rem;
+    }
+
+    .contact h2 {
+        font-size: 1.2rem;
+    }
+
+    .contact form {
+        flex-direction: column;
+    }
+
+    .services {
+        padding-top: 19rem;
+        padding-bottom: 4rem;
+        height: unset;
+        flex-direction: column;
+    }
+
+    .services>h2 {
+        width: 95%;
+        font-size: 2rem;
+    }
+
+    .services>p {
+        width: 95%;
+        font-size: 1.0rem;
+        padding-bottom: 4rem;
+    }
+
+    .services .cardContainer {
+        position: static;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .services .cardContainer .cards {
+        padding: 2rem;
+        height: unset;
+    }
+
+    .services .cardContainer .cards .price {
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    .call2action {
+        margin-top: 3rem;
+    }
+
+    .rowContainer {
+        flex-direction: column;
+    }
+
+    .rowContainer .description,
+    .rowContainer .image {
+        width: 100%;
+    }
+
+    .howItWorksContainer .howItWorks {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .customersContainer .customers {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .supporters {
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .supporters img {
+        width: 9rem;
+    }
+
+    .callUsNowContent p {
+        font-size: 1.2rem;
+    }
+
+    .callUsNowContent h1 {
+        font-size: 1.7rem;
+    }
+
+    footer {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .footerContainer {
+        flex-direction: column;
+    }
+
+    .footerContainer .column {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+
+    .copyright {
+        margin: 1rem 0;
+    }
 }
