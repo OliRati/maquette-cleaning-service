@@ -713,7 +713,8 @@ footer {
 
     .call2action button {
         width: unset;
-        padding: 1rem 2rem;
+        padding: 1rem 1rem;
+        margin: 0.5rem;
     }
 
     .rowContainer {
@@ -783,6 +784,13 @@ footer {
 
     .callUsNowContent h1 {
         font-size: 1.7rem;
+    }
+
+    .callUsNowContent button {
+        width: fit-content;
+        height: fit-content;
+        padding: 1rem;
+        white-space: nowrap;
     }
 
     footer {
