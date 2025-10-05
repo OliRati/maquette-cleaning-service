@@ -90,6 +90,8 @@ header {
 .logo {
     font-weight: 600;
     font-size: 18px;
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
@@ -120,6 +122,8 @@ header {
 
 .menuBar .rightMenu .callUs {
     font-size: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .menuBar .rightMenu .callUs span {
@@ -622,6 +626,14 @@ footer {
         --content-width: 94%;
     }
 
+    .menuBar {
+        padding: 28px 1rem;
+    }
+
+    .menuBar .menu nav ul li a {
+        padding: 28px 0.5rem;
+    }
+
     header .title h1 {
         font-size: 3.5rem;
         white-space: unset;
@@ -733,7 +745,7 @@ footer {
         display: block;
     }
 
-    .menuBar .callUs {
+    .menuBar .rightMenu .callUs {
         display: none;
     }
 
