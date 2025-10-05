@@ -622,6 +622,11 @@ footer {
         --content-width: 94%;
     }
 
+    header .title h1 {
+        font-size: 3.5rem;
+        white-space: unset;
+    }
+
     .rowContainer {
         align-items: stretch;
     }
@@ -666,6 +671,36 @@ footer {
         padding: 2rem;
         width: 32%;
         height: unset;
+    }
+
+    .howItWorksContainer .howItWorks {
+        margin: 2rem 0;
+    }
+
+    .howItWorksContainer .howItWorks>div {
+        width: 32%;
+        height: unset;
+        padding: 2rem;
+    }
+
+    .customersContainer .customers {
+        margin: 2rem 0;
+    }
+
+    .customersContainer .customers .customerCard {
+        width: 32%;
+        height: unset;
+    }
+
+    .supporters {
+        width: 90%;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .supporters img {
+        height: 3rem;
+        width: auto;
     }
 
 }
@@ -821,16 +856,6 @@ footer {
 
     .customersContainer .customers .customerCard {
         width: 80%;
-    }
-
-    .supporters {
-        width: 90%;
-        flex-wrap: wrap;
-        gap: 3rem;
-    }
-
-    .supporters img {
-        width: 9rem;
     }
 
     .callUsNowContent p {
