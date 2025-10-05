@@ -114,7 +114,9 @@ header {
 .menuBar .menu,
 .menuBar .menu nav,
 .menuBar .menu nav ul,
-.menuBar .menu nav ul li {
+.menuBar .menu nav ul li,
+.menuBar .search,
+.menuBar label {
     height: 100%;
 }
 
