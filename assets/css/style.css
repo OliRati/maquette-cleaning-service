@@ -79,13 +79,25 @@ header {
     padding: 0 35px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 
 #hamburgermenu,
 .menuBar label {
     display: none;
 }
+
+.menuBar label,
+.menuBar .search {
+    padding: 28px;
+}
+
+.menuBar label:hover,
+.menuBar .search:hover {
+    cursor: pointer;
+    background-color: var(--color-Yellow);
+}
+
 
 .logo {
     font-weight: 600;
@@ -98,18 +110,32 @@ header {
     vertical-align: middle;
 }
 
+/* Ensure menu have the full available height */
+.menuBar .menu,
+.menuBar .menu nav,
+.menuBar .menu nav ul,
+.menuBar .menu nav ul li {
+    height: 100%;
+}
+
 .menuBar .menu nav ul {
     display: flex;
 }
 
+.menuBar .menu nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .menuBar .menu nav ul li a {
-    padding: 28px;
+    padding: 28px 15px;
     text-decoration: none;
     color: var(--color-Black);
     font-size: 15px;
 }
 
-.menuBar .menu nav ul li a:hover {
+.menuBar .menu nav ul li:hover {
     background-color: var(--color-Yellow);
 }
 
@@ -627,11 +653,16 @@ footer {
     }
 
     .menuBar {
-        padding: 28px 1rem;
+        padding: 0 1rem;
     }
 
     .menuBar .menu nav ul li a {
-        padding: 28px 0.5rem;
+        padding: 28px 8px;
+    }
+
+    .menuBar label,
+    .menuBar .search {
+        padding: 28px 8px;
     }
 
     header .title h1 {
